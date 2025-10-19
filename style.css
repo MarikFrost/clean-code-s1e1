@@ -16,7 +16,6 @@ body {
 .aaa .more_inf {
   font-family: fantasy, cursive;
 }
-
 @media (max-width:768px) {
   .aaa {
     text-align: center;
@@ -39,7 +38,7 @@ ul {
   margin:0;
   padding: 0px;
 }
-li, 
+li,
 h3 {
   list-style:none;
 }
@@ -105,7 +104,6 @@ li {
 li > * {
   vertical-align: middle;
 }
-
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
