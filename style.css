@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
-.header .more-inf {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
@@ -21,7 +21,7 @@
     text-align: center;
   }
 }
-.main-wrapper {
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
