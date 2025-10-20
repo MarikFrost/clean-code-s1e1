@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="page">
   <header class="header">
     <img class="header-img" src="./eisenhower-matrix.jpg">
     <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
@@ -14,41 +14,41 @@
   </header>
   <main class="main-wrapper">
     <p id="topSectionForAddingElementToList">
-      <label for="new-task">Add Item</label>
+      <label for="new-task" class="label-new-task">Add Item</label>
       <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
+        <input id="new-task" class="task text-input" type="text">
+        <button class="page-button">Add</button>
       </div>
     </p>
     <h3>Todo</h3>
     <ul id="incompleteTasks">
-      <li>
-        <input type="checkbox">
-        <label class="task">Pay Bills</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+      <li class="incomplete-Item">
+        <input type="checkbox" class="incomplete-checkbox">
+        <label class="task incomplete-label">Pay Bills</label>
+        <input type="text" class="task text-input">
+        <button class="edit page-button">Edit</button>
+        <button class="delete-item page-button">
           <img src="./remove.svg">
         </button>
       </li>
-      <li class="editMode">
-        <input type="checkbox">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
+      <li class="editMode incomplete-Item">
+        <input type="checkbox" class="incomplete-checkbox">
+        <label class="task incomplete-label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="task text-input">
+        <button class="edit page-button">Save</button>
+        <button class="delete-item page-button">
           <img src="./remove.svg">
         </button>
       </li>
     </ul>
     <h3>Completed</h3>
     <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+      <li class="incomplete-Item">
+        <input type="checkbox" class="incomplete-checkbox" checked>
+        <label class="task incomplete-label">See the Doctor</label>
+        <input type="text" class="task text-input">
+        <button class="edit page-button">Edit</button>
+        <button class="delete-item page-button">
           <img src="./remove.svg">
         </button>
       </li>
