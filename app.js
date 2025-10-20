@@ -23,14 +23,18 @@ var createNewTaskElement = function(taskString) {
   var deleteButton = document.createElement("button");//delete button
   var deleteButtonImg = document.createElement("img");//delete button image
   label.innerText = taskString;
-  label.className = "task";
+  deleteButtonImg.alt = "delete-icon"
+  label.className = "task incomplete-label";
   //Each elements, needs appending
+  listItem.className = "editMode incomplete-Item";
   checkBox.type = "checkbox";
+  checkBox.className = "incomplete-checkbox"
   editInput.type = "text";
-  editInput.className = "task";
+  editInput.value = taskInput.value
+  editInput.className = "task text-input";
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "edit";
-  deleteButton.className = "delete-item";
+  editButton.className = "edit page-button";
+  deleteButton.className = "delete-item page-button";
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
   //and appending.
@@ -56,7 +60,7 @@ var editTask = function() {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
   var listItem = this.parentNode;
-  var editInput = listItem.querySelector("input[type=text]");
+  var editInput = listItem.querySelector(".text-input");
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".edit");
   var containsClass = listItem.classList.contains("editMode");
@@ -65,6 +69,7 @@ var editTask = function() {
     //switch to .editmode
     //label becomes the inputs value.
     label.innerText = editInput.value;
+  
     editBtn.innerText = "Edit";
   } else {
     editInput.value = label.innerText;
