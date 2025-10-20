@@ -84,7 +84,6 @@ button {
 .text-input:focus {
   color: #333;
 }
-/* New Task */
 #new-task {
   width: 318px;
 }
@@ -120,7 +119,6 @@ button {
 .delete-item img:hover {
   transform: rotateZ(0);
 }
-/* Completed */
 #completed-tasks label {
   text-decoration: line-through;
   color: #888;
